@@ -31,7 +31,7 @@ Le bug a été découvert en 2019. Il concerne la collection MultiSet qui, lorsq
 
 ### 3. Chaos Engineering
 
-Netflix effectue plusieurs manipulations comme faire échouer un service interne, rendre une région entière d'Amazon inaccessible ou encore ajouter de la latence dans les requêtes entre services.
+Netflix effectue plusieurs manipulations comme faire échouer un service interne, rendre une région entière du cloud Amazon inaccessible ou encore ajouter de la latence dans les requêtes entre services.
 
 Les variables observées sont par exemple les crash des serveurs, les erreurs de disques.
 
