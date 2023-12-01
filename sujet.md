@@ -12,7 +12,7 @@
 
 ## Answers
 
-### Article about the discovery of a software bug
+### 1. Article about the discovery of a software bug
 
 - Article : [Next – Firefox 112.0.1 corrige un bug gênant avec les cookies](https://next.ink/brief_article/firefox-112-0-1-corrige-bug-genant-avec-cookies/)
 - Le [rapport de bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1827669) sur le tracker de bug de Mozilla
@@ -22,4 +22,10 @@ Le bug a été trouvé après la mise à jour 112 de Firefox. Firefox nettoyait 
 Répercussions sur les utilisateurs : préférences et statut de login oubliés, c'est un peu gênant.
 Probablement qu'un test précis aurait aidé, même si on imagine que Firefox est déjà bien testé (en effet : [Mozilla Code Coverage](https://coverage.moz.tools/)).
 
+### 2. Apache Bug
+
+- [Rapport de bug](https://issues.apache.org/jira/projects/COLLECTIONS/issues/COLLECTIONS-709?filter=doneissues)
+- [Pull request](https://github.com/apache/commons-collections/pull/66)
+
+Le bug a été découvert en 2019. Il concerne la collection MultiSet qui, lorsqu'on a retiré le dernier élément, ne renvoie pas 0 comme nombre d'éléments lors de l'appel de la fonction getCount(). C'est un bug local puisque le bug vient d'une mauvaise programmation. La solution trouvée est d'affecter un 0 à un entier. Un test a été ajouté afin de vérifier la correction de ce bug.  
 
