@@ -29,3 +29,14 @@ Probablement qu'un test précis aurait aidé, même si on imagine que Firefox es
 
 Le bug a été découvert en 2019. Il concerne la collection MultiSet qui, lorsqu'on a retiré le dernier élément, ne renvoie pas 0 comme nombre d'éléments lors de l'appel de la fonction getCount(). C'est un bug local puisque le bug vient d'une mauvaise programmation. La solution trouvée est d'affecter un 0 à un entier. Un test a été ajouté afin de vérifier la correction de ce bug.  
 
+### 3. Chaos Engineering
+
+Netflix effectue plusieurs manipulations comme faire échouer un service interne, rendre une région entière d'Amazon inaccessible ou encore ajouter de la latence dans les requêtes entre services.
+
+Les variables observées sont par exemple les crash des serveurs, les erreurs de disques.
+
+Amazon, Google, Microsoft et Facebook utilisent des techniques de test de résilience pas trop différentes selon le papier.
+
+Facebook pourrait l'utiliser pour tester comment le système gère les erreurs de latence, la congestion du réseau à travers la planète en observant les taux d'erreur et de réponse.
+
+
