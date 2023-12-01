@@ -39,4 +39,6 @@ Amazon, Google, Microsoft et Facebook utilisent des techniques de test de résil
 
 Facebook pourrait l'utiliser pour tester comment le système gère les erreurs de latence, la congestion du réseau à travers la planète en observant les taux d'erreur et de réponse.
 
+### 4. Web Assembly
 
+Une spécification formelle permet aux développeur.euse.s de pouvoir faire des analyses statiques plus efficaces et donc de coder plus rapidement, efficacement et d'éviter beaucoup d'erreurs. Même avec une spécification précise et formelle, on ne peut pas se dispenser de faire des tests sur notre programme. 
