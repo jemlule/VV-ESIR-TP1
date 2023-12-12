@@ -42,3 +42,13 @@ Facebook pourrait l'utiliser pour tester comment le système gère les erreurs d
 ### 4. Web Assembly
 
 Une spécification formelle permet aux développeur.euse.s de pouvoir faire des analyses statiques plus efficaces et donc de coder plus rapidement, efficacement et d'éviter beaucoup d'erreurs. Même avec une spécification précise et formelle, on ne peut pas se dispenser de faire des tests sur notre programme. 
+
+### 5. Mechanized specification
+
+Les principaux avantages de le spécification mécanisée sont :
+- faire une preuve mécanisée de l'intégrité des types de WebAssembly (apparemment ça a permis de dévoiler plusieurs problèmes dans la spécification, qui a été améliorée depuis)
+- un interpréteur d'exécutable vérifié et vérificateur de typage distincts
+
+La spec mécanisée a été vérifiée à l'aide des tests de conformité mis dans le dépôt WebAssembly (tests générés avec CSmith et convertis en WebAssembly avec Binaryen).
+
+Non ça ne remplace pas le besoin de tester le langage. Il peut y avoir des aspects du langage ou des implémentations qui ne sont pas couverts par la spécification. Mais plus généralement, les tests peuvent montrer des erreurs du monde réel. En effet, l'auteur du papier parle de la pratique du fuzzing sur des implémentations réelles provenant de l'industrie.
