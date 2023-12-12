@@ -47,7 +47,7 @@ Une spécification formelle permet aux développeur.euse.s de pouvoir faire des 
 
 Les principaux avantages de le spécification mécanisée sont :
 - faire une preuve mécanisée de l'intégrité des types de WebAssembly (apparemment ça a permis de dévoiler plusieurs problèmes dans la spécification, qui a été améliorée depuis)
-- un interpréteur d'exécutable vérifié et vérificateur de typage distincts
+- un interpréteur d'exécutable vérifié et un vérificateur de typage distincts
 
 La spec mécanisée a été vérifiée à l'aide des tests de conformité mis dans le dépôt WebAssembly (tests générés avec CSmith et convertis en WebAssembly avec Binaryen).
 
