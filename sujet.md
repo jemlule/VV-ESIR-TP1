@@ -33,7 +33,7 @@ Le bug a été découvert en 2019. Il concerne la collection MultiSet qui, lorsq
 
 Netflix effectue plusieurs manipulations comme faire échouer un service interne, rendre une région entière du cloud Amazon inaccessible ou encore ajouter de la latence dans les requêtes entre services.
 
-Les variables observées sont par exemple les crash des serveurs, les erreurs de disques.
+Les variables observées sont par exemple les crashs des serveurs, les erreurs de disques.
 
 Amazon, Google, Microsoft et Facebook utilisent des techniques de test de résilience pas trop différentes selon le papier.
 
